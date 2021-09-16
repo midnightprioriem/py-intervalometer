@@ -28,6 +28,7 @@ def main(args):
             time.sleep(args.interval)
             shot_num += 1
         except KeyboardInterrupt:
+            srl.write(BULB_OFF_COMMAND)
             break
     sys.exit()
 
